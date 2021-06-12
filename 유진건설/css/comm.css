@@ -1,0 +1,361 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333333;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.blind {
+  text-indent: -9999px;
+  height: 0;
+  font-size: 0;
+  overflow: hidden;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ff5050;
+  position: relative;
+}
+
+header .logo a {
+  display: block;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 40px;
+  text-indent: -9999px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav .nav-depth1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+header nav .nav-depth1 > li {
+  position: relative;
+}
+
+header nav .nav-depth1 > li:hover > a {
+  color: #ffffff;
+  border-bottom: 3px solid #5b9bd5;
+}
+
+header nav .nav-depth1 > li > a {
+  display: block;
+  height: 100px;
+  line-height: 100px;
+  padding: 0 65px;
+}
+
+.nav-bg {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.76);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  z-index: 80;
+}
+
+.nav-depth2 {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 105px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  -webkit-transition: height 0.2s;
+  transition: height 0.2s;
+  z-index: 90;
+}
+
+.nav-depth2 a {
+  display: block;
+  padding: 13px 0;
+  color: #ccc;
+}
+
+.nav-depth2 a:hover {
+  background-color: #5b9bd5;
+  color: #ffffff;
+}
+
+nav:hover .nav-bg {
+  height: 150px;
+}
+
+nav:hover .nav-depth2 {
+  height: 140px;
+}
+
+.slide {
+  height: 300px;
+}
+
+.slide ul {
+  position: relative;
+}
+
+.slide ul li {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slide ul span {
+  position: absolute;
+  top: 160px;
+  left: 90px;
+  color: #ff5050;
+  font-size: 2rem;
+  background-color: #fff;
+}
+
+.contents {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contents section {
+  width: 33%;
+}
+
+.cont-tit {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #bbb;
+  border-bottom-right-radius: 20%;
+}
+
+.sec-bbs .cont {
+  border-top: 1px solid #bbb;
+}
+
+.sec-bbs .cont li {
+  padding: 6px 0;
+}
+
+.sec-bbs .cont li::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 5px;
+  height: 5px;
+  background-color: #5b9bd5;
+}
+
+.sec-bbs .cont li a {
+  padding-left: 5px;
+}
+
+.sec-gallary .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 20px;
+  border-top: 1px solid #bbb;
+}
+
+.sec-gallary .cont li img {
+  width: 100px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.sec-gallary .cont li img:hover {
+  opacity: .5;
+  -webkit-transform: translate(2px, 1px);
+          transform: translate(2px, 1px);
+}
+
+.sec-gallary .cont li a {
+  display: block;
+}
+
+.sec-goto {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.sec-goto a {
+  display: block;
+}
+
+.sec-goto a img {
+  width: 100%;
+  height: 200px;
+}
+
+.sec-goto span {
+  position: absolute;
+  top: 80px;
+  left: 170px;
+  width: 60px;
+  height: 30px;
+  background-color: #5b9ad5d7;
+  font-size: 1.5rem;
+  color: #ffffff;
+  line-height: 30px;
+  text-align: center;
+}
+
+.sec-goto span:hover {
+  -webkit-transform: scale(2, 2);
+          transform: scale(2, 2);
+}
+
+footer {
+  height: 100px;
+  background-color: #777;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer a {
+  color: #ccc;
+}
+
+footer .footer-group {
+  width: 60%;
+}
+
+footer .footer-group .under-menu {
+  height: 50px;
+  padding-top: 15px;
+}
+
+footer .footer-group .under-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .footer-group .copyright {
+  height: 50px;
+  padding-top: 15px;
+  text-align: center;
+  color: #ccc;
+}
+
+footer .famillysite {
+  width: 30%;
+}
+
+footer .famillysite ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.modal {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.616);
+  z-index: 100;
+}
+
+.modal .modal-inn {
+  width: 330px;
+  height: 370px;
+  background-color: #ffc000;
+  border-radius: 70px;
+  text-align: center;
+  position: relative;
+}
+
+.modal .modal-inn h2 {
+  font-size: 1.5rem;
+  padding: 45px;
+  color: #ffffff;
+}
+
+.modal .modal-inn p {
+  padding: 0 30px;
+}
+
+.modal .modal-inn input {
+  position: absolute;
+  bottom: 40px;
+  left: 114px;
+  width: 100px;
+  height: 30px;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: #5b9bd5;
+  color: #ffffff;
+  border: none;
+}
+/*# sourceMappingURL=comm.css.map */

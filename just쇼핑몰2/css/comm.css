@@ -1,0 +1,366 @@
+@import url(../css/comm.css);
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  text-decoration: none;
+  font-size: 14px;
+  color: #222328;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+.blind {
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.clearfix::after {
+  content: " ";
+  clear: both;
+  display: block;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo a {
+  background-image: url(../image/Untitled-1.png);
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 40px;
+  display: block;
+  text-indent: -9999px;
+}
+
+header {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .logo {
+  padding: 35px 0;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+header nav .nav-depth1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+header nav .nav-depth1 > li {
+  position: relative;
+}
+
+header nav .nav-depth1 > li:hover > a {
+  color: tomato;
+}
+
+header nav .nav-depth1 > li > a {
+  display: block;
+  height: 100px;
+  line-height: 100px;
+  padding: 0 40px;
+}
+
+.nav-bg {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.712);
+  z-index: 80;
+  width: 100%;
+  height: 0;
+  -webkit-transition: height 0.2s;
+  transition: height 0.2s;
+}
+
+.nav-depth2 {
+  position: absolute;
+  top: 110px;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  text-align: center;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.nav-depth2 a {
+  display: block;
+}
+
+nav:hover .nav-depth2 {
+  height: 100px;
+}
+
+nav:hover .nav-bg {
+  height: 110px;
+  border-top: 2px solid tomato;
+}
+
+.nav-depth2 a:hover {
+  background-color: tomato;
+  color: #fff;
+}
+
+.slide {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide > ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main {
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 0;
+}
+
+.main .tab {
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .bnr {
+  width: 33%;
+}
+
+.main .sns-goto {
+  width: 33%;
+}
+
+.tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tab .tab-bbs {
+  width: 50%;
+}
+
+.tab .tab-bbs .cont-tab a {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 350px;
+  padding: 10px 20px;
+}
+
+.tab .tab-bbs .cont-tab a::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: purple;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.tab .tab-gallary {
+  width: 50%;
+}
+
+.tab .tab-gallary .cont-tab ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tab .tab-gallary .cont-tab ul li {
+  width: 30%;
+}
+
+.tab .tab-gallary .cont-tab ul li a {
+  display: block;
+}
+
+.tab .tab-gallary .cont-tab ul li img {
+  width: 100%;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tab {
+  position: relative;
+}
+
+.tab .on .tab-tit a {
+  background-color: purple;
+}
+
+.tab .on .cont-tab {
+  display: block;
+}
+
+.tab .cont-tab {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  display: none;
+}
+
+.tab .tab-tit a {
+  display: block;
+  height: 50px;
+  background-color: #eee;
+  text-align: center;
+  line-height: 50px;
+  border-bottom: 2px solid purple;
+}
+
+.bnr img {
+  width: 396px;
+  height: 190px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+
+.bnr a {
+  display: block;
+}
+
+.sns-goto {
+  background-color: #eee;
+}
+
+.sns-goto .cont {
+  height: 100%;
+}
+
+.sns-goto .cont ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.sns-goto .cont ul a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 50px;
+}
+
+footer {
+  height: 100px;
+  background-color: #999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .logo {
+  padding: 20px 0;
+}
+
+footer .copyright {
+  padding: 20px 0;
+}
+
+footer .sns ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .sns ul li {
+  padding: 20px 10px;
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.63);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+#modal .modal-inn {
+  width: 668px;
+  height: 553px;
+  position: relative;
+}
+
+#modal input {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.719);
+  color: #fff;
+  border-style: none;
+  cursor: pointer;
+}
+
+#modal img {
+  border-radius: 20%;
+}
+/*# sourceMappingURL=comm.css.map */

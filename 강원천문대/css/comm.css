@@ -1,0 +1,360 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333333;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.blind {
+  font-size: 0;
+  height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.logo a {
+  display: block;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  width: 200px;
+  height: 40px;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo a {
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .nav-depth1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .nav-depth1 > li {
+  position: relative;
+}
+
+header nav .nav-depth1 > li:hover > a {
+  color: #0066ad;
+}
+
+header nav .nav-depth1 > li > a {
+  display: block;
+  padding: 0 30px;
+}
+
+header nav .nav-depth2 {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  text-align: center;
+  border-top: 1px solid #eee;
+  width: 100%;
+  z-index: 90;
+  background: #fff;
+  height: 130px;
+  display: none;
+}
+
+header nav .nav-depth2 li:hover a {
+  background-color: #0066ad;
+  color: #ffffff;
+}
+
+header nav .nav-depth2 li a {
+  display: block;
+  padding: 10px 0;
+}
+
+.slide {
+  height: 300px;
+  position: relative;
+}
+
+.slide ul li {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slide ul .slide-txt {
+  position: absolute;
+  top: 120px;
+  left: 70px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.664);
+  width: 360px;
+  height: 50px;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 50px;
+}
+
+.contents {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 0;
+}
+
+.contents .tab, .contents section {
+  width: 33%;
+}
+
+.bnr .cont, .direct .cont {
+  position: relative;
+}
+
+.bnr .cont img, .direct .cont img {
+  width: 396px;
+  height: 190px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+
+.bnr .cont span, .direct .cont span {
+  position: absolute;
+  top: 90px;
+  left: 150px;
+  background-color: rgba(0, 0, 0, 0.616);
+  z-index: 80;
+  color: #ffffff;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tab .tab-bbs {
+  width: 50%;
+}
+
+.tab .tab-gallary {
+  width: 50%;
+}
+
+.tab .on .sec-tit a {
+  background-color: #0066ad;
+  color: #fff;
+}
+
+.tab .on .sec-cont {
+  display: block;
+}
+
+.tab {
+  position: relative;
+}
+
+.tab .sec-tit a {
+  background-color: #eee;
+  display: block;
+  height: 50px;
+  text-align: center;
+  line-height: 40px;
+  border-bottom: 1.5px solid #0066ad;
+}
+
+.tab .sec-cont {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  display: none;
+}
+
+.tab-bbs .sec-cont li {
+  margin-top: 5px;
+}
+
+.tab-bbs .sec-cont li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #30a3f3;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.tab-bbs .sec-cont li a {
+  padding: 5px;
+}
+
+.tab-gallary .sec-cont ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 40px;
+}
+
+.tab-gallary .sec-cont ul li {
+  width: 30%;
+}
+
+.tab-gallary .sec-cont ul li img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.tab-gallary .sec-cont ul li a {
+  display: block;
+  padding: 5px;
+}
+
+footer {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #999;
+}
+
+footer .logo {
+  width: 20%;
+}
+
+footer .logo a {
+  background-image: url(../images/footerLogo.png);
+  margin-top: 30px;
+}
+
+footer .footer-group {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer-group .undermenu {
+  padding: 5px;
+}
+
+footer .footer-group .undermenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .footer-group .undermenu ul a {
+  display: block;
+  width: 100%;
+}
+
+footer .footer-group .copyright {
+  padding: 5px;
+  text-align: center;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.486);
+  z-index: 100;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.modal .modal-inn {
+  width: 400px;
+  height: 260px;
+  border-radius: 7%;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.modal .modal-inn h2 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.modal .modal-inn p {
+  padding: 35px 50px;
+}
+
+.modal .modal-inn input {
+  position: absolute;
+  bottom: 20px;
+  left: 150px;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  color: #ffffff;
+  background-color: #30a3f3;
+  border: 1px solid #eee;
+}
+/*# sourceMappingURL=comm.css.map */
