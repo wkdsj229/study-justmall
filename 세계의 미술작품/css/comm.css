@@ -1,0 +1,364 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #888888;
+  line-height: 1.5;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+.blind {
+  text-indent: -9999px;
+  height: 0;
+  font-size: 0;
+  overflow: hidden;
+}
+
+.clearfix::before {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #4A4948;
+}
+
+header .hearder-wrap {
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.main {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main .slide {
+  height: 300px;
+}
+
+.main .contents {
+  height: 200px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #2b2929;
+}
+
+footer .footer-wrap {
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.hearder-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hearder-wrap .logo a {
+  display: block;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 40px;
+  text-indent: -9999px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .nav-depth1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+nav .nav-depth1 > li {
+  position: relative;
+}
+
+nav .nav-depth1 > li:hover > a {
+  color: #CAAC7D;
+  border-bottom: 3px solid #CAAC7D;
+}
+
+nav .nav-depth1 > li > a {
+  display: block;
+  padding: 0 65px;
+  height: 100px;
+  line-height: 100px;
+  color: #ffffff;
+}
+
+.nav-depth2 {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.74);
+  height: 150px;
+  padding: 5px;
+  z-index: 50;
+}
+
+.nav-depth2 a {
+  display: block;
+  padding: 7px 12px;
+}
+
+.nav-depth2 a:hover {
+  background-color: #CAAC7D;
+  color: #FFFFFF;
+}
+
+.slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slide ul li {
+  position: relative;
+  height: 300px;
+}
+
+.slide ul li span {
+  position: absolute;
+  top: 150px;
+  left: 390px;
+  background-color: rgba(0, 0, 0, 0.733);
+  font-size: 2em;
+  color: #FFFFFF;
+}
+
+.contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contents > section {
+  width: 33%;
+}
+
+.contents .sec-tit {
+  width: 100px;
+  height: 40px;
+  background-color: #eee;
+  border-bottom-right-radius: 15px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.sec-bbs .cont {
+  border-top: 1px solid #eee;
+}
+
+.sec-bbs .cont ul li {
+  padding: 6px 0;
+}
+
+.sec-bbs .cont ul li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #CAAC7D;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.sec-bbs .cont ul li a {
+  padding-left: 5px;
+}
+
+.sec-gallary .cont {
+  border-top: 1px solid #eee;
+}
+
+.sec-gallary .cont ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 30px;
+}
+
+.sec-gallary .cont ul li a {
+  display: block;
+}
+
+.sec-gallary .cont ul li img {
+  width: 80px;
+  height: 80px;
+}
+
+.sec-gallary .cont ul li img:hover {
+  opacity: .5;
+  -webkit-transform: translate(2px, 3px);
+          transform: translate(2px, 3px);
+}
+
+.sec-bnr .cont {
+  height: 100%;
+  position: relative;
+}
+
+.sec-bnr .cont a {
+  display: block;
+}
+
+.sec-bnr .cont a img {
+  width: 100%;
+  height: 200px;
+}
+
+.sec-bnr .cont .bnr-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #caac7da8;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: none;
+  font-size: 2em;
+  color: #222;
+  text-align: center;
+  line-height: 200px;
+  cursor: pointer;
+}
+
+.sec-bnr:hover .bnr-bg {
+  display: block;
+}
+
+.footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-wrap .logo a {
+  display: block;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 40px;
+  text-indent: -9999px;
+}
+
+.footer-wrap .footer-sns ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer-wrap .footer-sns ul li {
+  padding: 0 5px;
+}
+
+.footer-wrap .footer-sns ul li a {
+  display: block;
+}
+
+.footer-wrap .footer-sns ul li a img {
+  border-radius: 50%;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.664);
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 80;
+}
+
+.modal .modal-inn {
+  width: 300px;
+  height: 410px;
+  background-color: #CAAC7D;
+  border-radius: 75px;
+  position: relative;
+}
+
+.modal .modal-inn h2 {
+  font-size: 1.5em;
+  text-align: center;
+  color: #222;
+  padding: 55px 10px;
+}
+
+.modal .modal-inn p {
+  text-align: center;
+  color: #444;
+  padding: 5px 40px;
+}
+
+.modal .modal-inn input {
+  position: absolute;
+  bottom: 40px;
+  left: 90px;
+  width: 120px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=comm.css.map */
